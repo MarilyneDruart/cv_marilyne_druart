@@ -1,0 +1,231 @@
+/* ---------------------- HTML + BODY + HEADER + FOOTER ---------------------- */
+html, body{
+    /* box-sizing: border-box;
+    height: 100%; */
+    /* padding: 0;
+    margin: 0; */
+    background-color: rgba(40, 0, 78, 0.726);
+}
+
+body {
+    flex-grow: 1;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+footer {
+    width: 100%;
+    background: rgba(102, 51, 153, 0.137);
+    background: linear-gradient(rgba(160, 78, 241, 0.473), rgba(255, 41, 226, 0.397));
+    padding: 2rem 1rem 1rem;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+/*------------------------- NAVBAR -------------------------*/
+.navbar {
+    /* overflow: hidden; */
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+nav.navbar {
+    background: rgba(102, 51, 153, 0.137);
+    background: linear-gradient(rgba(255, 41, 226, 0.397), rgba(160, 78, 241, 0.473));
+    padding: 2rem 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar .container-fluid {
+    padding: 0.5rem;
+}
+
+#navbarNav {
+    flex-direction: row-reverse;
+}
+
+a.navbar-brand, a.nav-link, .bi-list {
+    color: aliceblue;
+    font-weight:500;
+}
+
+a.navbar-brand:hover, a.nav-link:hover, .bi-list:hover {
+    background-color:  rgba(40, 0, 78, 0.726);
+    border-radius: 0.5rem;
+}
+
+.navbar-brand, .navbar-nav {
+    --bs-nav-link-hover-color: rgb(255, 46, 203);
+    --bs-navbar-brand-hover-color: rgb(255, 46, 203);
+}
+
+ul.navbar-nav {
+    align-items: flex-end;
+}
+
+/*------------------------- TEXTS -------------------------*/
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+.container_formation h1, .container_formation h2, .container_realisations h1, .container_realisations h2 {
+    color: aliceblue;
+}
+
+h1::after {
+    background: rgb(255, 46, 203);
+    margin: 1rem auto;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 38%;
+    height: 0.25rem;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+li {
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(40, 0, 78, 0.726);
+}
+
+/*------------------------- MAIN -------------------------*/
+#about {
+    margin-top: 7rem;
+    padding-top: 7rem;
+}
+
+#formation, #experience, #realisations, #contact {
+    padding-top: 7rem;
+}
+
+.container_about, .container_formation, .container_experience, .container_realisations, .container_contact, footer {
+    padding: 1rem;
+    box-shadow: 0 1px 16px rgb(0 0 0 / 40%);
+}
+
+.container_about, .container_experience, .container_contact {
+    background-color: aliceblue;
+}
+
+.container_about_wrapper, .container_realisations_wrapper, .container_formation_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_about_left, .container_about_right, .container_realisations_wrapper, .container_formation_wrapper {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.container_about_right_profil {
+    max-width: 100%;
+    box-shadow: 1px 1px 12px 11px rgb(0 0 0 / 27%);
+    border-radius: 8rem;
+}
+
+.container_formation p:first-child {
+    color: aliceblue;
+}
+
+.container_formation .btn {
+    vertical-align: initial;
+}
+
+
+.container_formation .card li, .container_formation .card p {
+    color: black;
+}
+
+.container_realisations img {
+    max-width: 90%;
+    margin-top: 1rem;
+    border: #f0f8ff3b 1px solid;
+    border-style: dashed;
+}
+
+
+
+.btn-link, .container_realisations a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    text-decoration: none;
+    color: rgb(255, 46, 203);
+}
+
+
+/* ------------------------- IMG-PROFIL ------------------------- */
+@media(min-width: 310px) {
+    img.container_about_right_profil {
+        max-width: 13rem;
+        margin: 1rem;
+    }
+}
+
+/* ------------------------- TABLET ------------------------- */
+@media(min-width: 501px) and (max-width: 768px) {
+
+    .container_realisations img {
+        max-width: 27rem;
+    }
+
+
+
+}
+
+/* ------------------------- DESKTOP ------------------------- */
+@media(min-width: 769px) {
+    
+    .container_about, .container_formation, .container_experience, .container_realisations, .container_contact {
+        padding: 3rem;
+    }
+
+    .container_about .wrapper {
+        flex-direction: row;
+    }
+
+    .container_realisations img {
+        max-width: 27rem;
+    }
+}

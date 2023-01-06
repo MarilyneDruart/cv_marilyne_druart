@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Marilyne Druart{% endblock %}
+
+{% block body %}
+<div class="container_about" id="about">
+    <h1 class="titreBorder">
+        A propos de moi
+    </h1>
+    <div class="container_about_wrapper">
+        <div class="container_about_left">
+            <p>
+                Après un parcours évolutif au sein des entreprises pour lesquelles j’ai travaillé, j’ai été recrutée
+                pour gérer un projet de refonte d’un site internet et de son Back-Office.
+            </p>
+
+            <p>
+                Cette expérience a été très enrichissante sur les plans professionnel et personnel. J’ai travaillé avec
+                différents types de métiers dont direction, RH, administration, finance, agence de conseil et de
+                marketing digital , agence de conception et développement de sites et de logiciels web, … . La
+                collaboration avec les développeurs a été une révélation. Je voulais comprendre ce qu’ils faisaient,
+                savoir le faire moi aussi. C’est comme ça que j’ai décidé d’entamer une reconversion professionnelle en
+                tant que développeuse Web et que j’ai trouvé l’école O’clock pour y parvenir.
+            </p>
+
+            {# <p>
+                La formation de Développeur Web et Web mobile dispensée par l’école est très complète. En 6 mois nous
+                avons appris comment faire une intégration HTML/CSS, le Responsive Design et son Mobile First ; le DOM,
+                JavaScript et ses événements ; la programmation PHP et la Programmation Orientée Objet ; la création
+                d’une base de données et les requêtes SQL, la création d’une API ; les bonnes pratiques et le rangement
+                du code grâce à des architectures telles le MVC ou encore le CRUD ; la spécialisation Symfony et tous
+                ses composants qui facilitent la vie du développeur.
+            </p>
+
+            <p>
+                Pour conclure la formation, nous avons réalisé un projet de groupe, encadrés par l’équipe pédagogique,
+                dans un délai de 4 semaines. De la conception au déploiement, nous avons pu mettre en application toutes
+                les notions apprises en cours.
+            </p> #}
+        </div>
+        <div class="container_about_right">
+            <img class="container_about_right_profil" src="{{ asset('img/MD.jpg') }}" alt="photo_profil">
+        </div>
+    </div>
+</div>
+<div class="container_formation" id="formation">
+    <h1 class="titreBorder">
+        Formation
+    </h1>
+    <div class="container_formation_wrapper">
+        <h2>
+            Certification Opquast - Maîtrise de la qualité en projet Web
+            <a class="btn btn-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">…voir plus
+            </a>
+        </h2>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h3>Opquast - nov. 2022 - Score : 805/1000</h3>
+                <ul>
+                    <li>Prendre en compte la diversité et les exigences des utilisateurs</li>
+                    <li>Connaître les métiers du projet Web</li>
+                    <li>Maîtriser le vocabulaire du projet Web</li>
+                    <li>Connaître les règles, leur conception et leur utilisation</li>
+                    <li>Utiliser une check-list qualité Web</li>
+                    <li>Prévenir les risques et renforcer l’assurance qualité Web</li>
+                </ul>
+                <p>
+                    Le score obtenu atteste d'une : Excellente connaissance des bonnes pratiques qualité Web et du vocabulaire associé. Compétences réelles et appréciables pour participer à des projets Web.
+                </p>
+                <a href="https://directory.opquast.com/fr/certificat/3CNZFY/" target="_blank" >Voir le certificat</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_experience" id="experience">
+    <h1 class="titreBorder">
+        Experience
+    </h1>
+        <ul>
+            <li>Experience 1</li>
+            <li>Experience 2</li>
+        </ul>
+</div>
+<div class="container_realisations" id="realisations">
+    <h1 class="titreBorder">
+        Réalisations
+    </h1>
+    <div class="container_realisations_wrapper">
+        <ul>
+            <li>E-commerce</li>
+            <li><a href="https://github.com/MarilyneDruart/atopia_graphics" target="_blank"><img src="{{ asset('img/logo_atopia.png') }}" alt="logo_atopia"></a></li>
+        </ul>
+        <ul>
+            <li>Vitrine</li>
+            <li><a href="https://github.com/MarilyneDruart/gdf_loot" target="_blank"><img src="{{ asset('img/logo_gdf.png') }}" alt="logo_gdf"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="container_contact" id="contact">
+    <h1 class="titreBorder">
+        Me contacter
+    </h1>
+    https://www.linkedin.com/in/marilyne-druart/
+    https://github.com/MarilyneDruart
+
+</div>
+{% endblock %}
