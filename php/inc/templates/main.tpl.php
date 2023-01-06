@@ -125,7 +125,7 @@
 
     </div>
     <a href="#top">
-        <button type="button" class="btn btn-primary" alt="haut-de-page">
+        <button id="scroll_to_top" type="button" class="btn btn-primary" alt="haut-de-page">
             <i class="bi bi-arrow-up"></i>
         </button>
     </a>
