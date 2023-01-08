@@ -119,14 +119,14 @@
         <h1 class="titreBorder">
             Me contacter
         </h1>
-        
-        <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="<?= $value['alt'] ?>"></a>
-        <a href="https://github.com/MarilyneDruart" target="_blank"><img src="php/public/img/logo_github.png" alt="<?= $value['alt'] ?>"></a>
-
+        <div class="container_contact_wrapper">
+            <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="<?= $value['alt'] ?>"></a>
+            <a href="https://github.com/MarilyneDruart" target="_blank"><img src="php/public/img/logo_github.png" alt="<?= $value['alt'] ?>"></a>
+        </div>
     </div>
     <a href="#top">
         <button id="scroll_to_top" type="button" class="btn btn-primary" alt="haut-de-page">
-            <i class="bi bi-arrow-up"></i>
+            <i id="arrow_up" class="bi bi-arrow-up"></i>
         </button>
     </a>
 </main>
