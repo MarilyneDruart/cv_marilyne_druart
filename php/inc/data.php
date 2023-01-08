@@ -131,14 +131,14 @@
     $realisationList = [
         1 => [
             'type' => "E-commerce",
-            'title' => "Atopia Graphics",
+            'title' => "-> Atopia Graphics",
             'link' => "https://github.com/MarilyneDruart/atopia_graphics",
             'picture' => "php/public/img/logo_atopia.png",
             'alt' => "logo_atopia",
         ],
         2 => [
             'type' => "Sur-mesure",
-            'title' => "GDF loot council",
+            'title' => "-> GDF loot council",
             'link' => "https://github.com/MarilyneDruart/gdf_loot",
             'picture' => "php/public/img/logo_gdf.png",
             'alt' => "logo_gdf",
