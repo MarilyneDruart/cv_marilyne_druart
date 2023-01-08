@@ -1,9 +1,5 @@
 /* ---------------------- HTML + BODY + HEADER + FOOTER ---------------------- */
 html, body{
-    /* box-sizing: border-box;
-    height: 100%; */
-    /* padding: 0;
-    margin: 0; */
     background-color: rgba(40, 0, 78, 0.726);
 }
 
@@ -26,30 +22,46 @@ header, footer {
 
 footer {
     width: 100%;
-    background: linear-gradient(rgba(160, 78, 241, 0.473), rgba(255, 41, 226, 0.397));
+    background: linear-gradient(rgb(255, 46, 203, 0.6), rgba(40, 0, 78, 0.6));
     padding: 2rem 1rem 1rem;
     border-radius: 0.5rem;
     color: aliceblue;
+}
+
+footer p {
     text-align: center;
+    margin-bottom: 0;
+}
+
+.btn-legal {
+    color: aliceblue;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    vertical-align: baseline;
 }
 
 #scroll_to_top {
     position: fixed;
-    width: 25px;
-    height: 25px;
-    bottom: 50px;
-    right: 30px;
-    background-color: black;
-    border: 1px solid black;
+    width: 3.1rem;
+    height: 2.6rem;
+    bottom: 3rem;
+    right: 1.8rem;
+    background-color: rgba(40, 0, 78, 0.726);
+    border: 0.06rem solid aliceblue;
     border-radius: 0.5rem;
   }
 
   #scroll_to_top i {
     position: fixed;
-    width: 25px;
-    height: 25px;
-    bottom: 50px;
-    right: 30px;
+    width: 3.1rem;
+    height: 2.4rem;
+    bottom: 2.7rem;
+    right: 1.8rem;
+
+  }
+  #scroll_to_top #arrow_up::before {
+    font-weight:bolder !important;
   }
 
   #scroll_to_top i:hover {
@@ -57,15 +69,25 @@ footer {
   }
 
 /*------------------------- NAVBAR -------------------------*/
+.large-nav {
+    display: none;
+}
 
-.mobile-nav { z-index: 9999; position: absolute; right: 35px; top: 100px; width: 20px; }
-.menu-btn div { position: absolute; left: 100%; top: 64%; padding-right: 8px; margin-top: -0.50em; line-height: 1.2; font-size: 18px; font-weight: 200; vertical-align: middle; z-index: 99; }
-.menu-btn span { display: block; width: 19px; height: 3px; margin: 4px 0; background: #000; z-index: 99; }
-.responsive-menu { max-height: 0; background-color: rgba(0,0,0,0.5); width: 300px; overflow: hidden; transition: all .25s; position: absolute; left: -245px; text-align: left; }
-.responsive-menu ul { padding: 20px 0 0 20px; }
-.responsive-menu ul li { padding-bottom: 20px; }
-.responsive-menu a { text-decoration: none; color: #fff;}
-.expand {max-height: 300px; }
+.nav-dropdown-burger {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.dropdown-menu {
+    background: none;
+    border:none;
+}
+
+.dropdown-item {
+    color: aliceblue;
+    font-weight:500;
+}
 
 .navbar {
     transition: 0.4s;
@@ -76,8 +98,8 @@ footer {
 }
 
 nav.navbar {
-    background: linear-gradient(rgba(255, 41, 226, 0.397), rgba(160, 78, 241, 0.473));
-    padding: 2rem 1rem 1.5rem;
+    background: linear-gradient(rgb(255, 46, 203, 0.6), rgba(40, 0, 78, 0.6));
+    padding: 1.4rem 1rem 1.4rem;
     border-radius: 0.5rem;
 }
 
@@ -85,17 +107,28 @@ nav.navbar {
     padding: 0.5rem;
 }
 
-#navbarNav {
+#navbarNavDarkDropdown {
     flex-direction: row-reverse;
 }
 
-a.navbar-brand, a.nav-link, .bi-list {
-    color: aliceblue;
-    font-weight:500;
+.dropdown-toggle::after {
+    content: none;
 }
 
-a.navbar-brand:hover, a.nav-link:hover, .bi-list:hover {
-    background-color:  rgba(40, 0, 78, 0.726);
+a.navbar-brand {
+    font-size: 1.7rem;
+}
+
+a.navbar-brand, a.nav-link, .bi-list, .bi-list::before {
+    color: aliceblue;
+    font-weight:bolder !important;
+}
+
+a.nav-link {
+    font-size: large;
+}
+
+a.navbar-brand:hover, a.nav-link:hover, .bi-list:hover, .navbar-toggler {
     border-radius: 0.5rem;
 }
 
@@ -104,22 +137,29 @@ a.navbar-brand:hover, a.nav-link:hover, .bi-list:hover {
     --bs-navbar-brand-hover-color: rgb(255, 46, 203);
 }
 
-ul.navbar-nav {
+/* ul.navbar-nav {
     align-items: flex-end;
-}
+} */
+
+
 
 /*------------------------- TEXTS -------------------------*/
 h1 {
     text-align: center;
     position: relative;
+    font-size: 1.5rem;
 }
 
 h2 {
-
+    font-size: 1.4rem
 }
 
 h3 {
+    font-size: 1.2rem
+}
 
+h4 {
+    font-size: 1.2rem
 }
 
 .container_formation h1, .container_formation h2, .container_realisations h1, .container_realisations h2 {
@@ -156,6 +196,7 @@ a {
 }
 
 /*------------------------- MAIN -------------------------*/
+
 #about {
     margin-top: 7rem;
     padding-top: 7rem;
@@ -167,7 +208,7 @@ a {
 
 .container_about, .container_formation, .container_experience, .container_realisations, .container_contact, footer {
     padding: 1rem;
-    box-shadow: 0 1px 16px rgb(0 0 0 / 40%);
+    box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
 }
 
 .container_about, .container_experience, .container_contact {
@@ -180,14 +221,14 @@ a {
     justify-content: center;
 }
 
-.container_about_left, .container_about_right, .container_formation_wrapper, .container_experience_wrapper, .container_realisations_wrapper {
+.container_about_left, .container_about_right, .container_formation_wrapper, .container_experience_wrapper, .container_realisations_wrapper, .container_contact_wrapper {
     padding: 1rem;
     margin-top: 2rem;
 }
 
 .container_about_right_profil {
     max-width: 100%;
-    box-shadow: 1px 1px 12px 11px rgb(0 0 0 / 27%);
+    box-shadow: 0.06rem 0.06rem 0.75rem 0.68rem rgb(0 0 0 / 27%);
     border-radius: 8rem;
 }
 
@@ -200,14 +241,28 @@ a {
 }
 
 
-.container_formation .card li, .container_formation .card p {
+.container_formation .card-body, .container_formation .card li, .container_formation .card p {
     color: black;
+    background-color:aliceblue;
+}
+
+.container_experience .btn-link {
+    color: black;
+}
+
+.container_experience .card-body, .container_experience .card {
+    color:aliceblue;
+    background-color: rgba(40, 0, 78, 0.726);
+}
+
+.container_experience .card a {
+    color:aliceblue;
 }
 
 .container_realisations img {
     max-width: 90%;
     margin-top: 1rem;
-    border: #f0f8ff3b 1px solid;
+    border: #f0f8ff3b 0.06rem solid;
     border-style: dashed;
 }
 
@@ -218,13 +273,25 @@ a {
 }
 
 .container_contact img {
-    max-width: 90%;
+    max-width: 5rem;
     margin-top: 1rem;
-    border: #f0f8ff3b 1px solid;
+    border: #f0f8ff3b 0.06rem solid;
     border-style: dashed;
+    position: relative;
+    transition-duration: 0.8s;
+    transition-property: transform;
 }
 
-a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.container_contact img:hover {
+    transform: rotate(360deg);
+}
+
+.container_contact a {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active, .container_experience .card a:hover {
     text-decoration: none;
     color: rgb(255, 46, 203);
 }
@@ -239,25 +306,37 @@ a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:
 }
 
 /* ------------------------- TABLET ------------------------- */
-@media(min-width: 501px) and (max-width: 768px) {
+@media(min-width: 501px) and (max-width: 991px) {
 
     .container_realisations img {
         max-width: 27rem;
     }
 
-
+    /* .navbar-nav .dropdown-item {
+        display: none;
+    } */
+    
 
 }
 
 /* ------------------------- DESKTOP ------------------------- */
-@media(min-width: 769px) {
+@media(min-width: 992px) {
     
-    .container_about, .container_formation, .container_experience, .container_realisations, .container_contact {
-        padding: 3rem;
+    .nav-dropdown-burger {
+        display: none;
     }
+
+    .large-nav {
+        display:initial;
+    }
+    
 
     .container_about .wrapper {
         flex-direction: row;
+    }
+
+    .container_about, .container_formation, .container_experience, .container_realisations, .container_contact {
+        padding: 3rem;
     }
 
     .container_realisations img {
