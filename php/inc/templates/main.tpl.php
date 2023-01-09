@@ -8,33 +8,21 @@
         <div class="container_about_wrapper">
             <div class="container_about_left">
                 <p>
-                    Après un parcours évolutif au sein des entreprises pour lesquelles j’ai travaillé, j’ai été recrutée
-                    pour gérer un projet de refonte d’un site internet et de son Back-Office.
+                    Après un parcours évolutif au sein des entreprises pour lesquelles j’ai travaillé, ma dernière expérience consitait en la gestion d'un projet de refonte d’un site internet et de son Back-Office.
                 </p>
 
                 <p>
-                    Cette expérience a été très enrichissante sur les plans professionnel et personnel. J’ai travaillé avec
-                    différents types de métiers dont direction, RH, administration, finance, agence de conseil et de
-                    marketing digital , agence de conception et développement de sites et de logiciels web, … . La
-                    collaboration avec les développeurs a été une révélation. Je voulais comprendre ce qu’ils faisaient,
-                    savoir le faire moi aussi. C’est comme ça que j’ai décidé d’entamer une reconversion professionnelle en
-                    tant que développeuse Web et que j’ai trouvé l’école O’clock pour y parvenir.
-                </p>
-
-                <!-- <p>
-                    La formation de Développeur Web et Web mobile dispensée par l’école est très complète. En 6 mois nous
-                    avons appris comment faire une intégration HTML/CSS, le Responsive Design et son Mobile First ; le DOM,
-                    JavaScript et ses événements ; la programmation PHP et la Programmation Orientée Objet ; la création
-                    d’une base de données et les requêtes SQL, la création d’une API ; les bonnes pratiques et le rangement
-                    du code grâce à des architectures telles le MVC ou encore le CRUD ; la spécialisation Symfony et tous
-                    ses composants qui facilitent la vie du développeur.
+                    J’ai travaillé avec différents types de métiers dont les développeurs web. La collaboration avec ces derniers a été une révélation. Je voulais comprendre ce qu’ils faisaient, savoir le faire moi aussi. C’est comme ça que j’ai décidé d’entamer une reconversion professionnelle en
+                    tant que développeuse Web.
                 </p>
 
                 <p>
-                    Pour conclure la formation, nous avons réalisé un projet de groupe, encadrés par l’équipe pédagogique,
-                    dans un délai de 4 semaines. De la conception au déploiement, nous avons pu mettre en application toutes
-                    les notions apprises en cours.
-                </p>  -->
+                    J'ai suivi une formation de Développeur Web et Web mobile. En 6 mois nous avons appris comment faire une intégration HTML/CSS, le Responsive Design et son Mobile First ; le DOM, JavaScript et ses événements ; la programmation PHP et la Programmation Orientée Objet ; la création d’une base de données et les requêtes SQL, la création d’une API ; les bonnes pratiques et le rangement du code grâce à des architectures telles le MVC ou encore le CRUD ; la spécialisation Symfony et tous ses composants qui facilitent la vie du développeur.
+                </p>
+
+                <p>
+                    Enfin, nous avons réalisé un projet de groupe, encadrés par l’équipe pédagogique, dans un délai de 4 semaines. De la conception au déploiement, nous avons pu mettre en application toutes les notions apprises en cours.
+                </p> 
             </div>
             <div class="container_about_right">
                 <img class="container_about_right_profil" src="php/public/img/MD.jpg" alt="photo_profil">
@@ -121,6 +109,8 @@
         </h1>
         <div class="container_contact_wrapper">
             <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="<?= $value['alt'] ?>"></a>
+            <!-- <p><span>&#128072;</span>Envoyez-moi un message<span>&#128073;</span></p> -->
+
             <a href="https://github.com/MarilyneDruart" target="_blank"><img src="php/public/img/logo_github.png" alt="<?= $value['alt'] ?>"></a>
         </div>
     </div>

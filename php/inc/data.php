@@ -25,7 +25,7 @@
             'location' => "Ecole O'clock - Téléprésentiel",
             'observation' => "Promo De Vinci",
             'link' => "https://www.francecompetences.fr/recherche/rncp/31114/",
-            'nameLink' => "voir la formation O'clock",
+            'nameLink' => "voir la certification RNCP",
             'detail' => [
                 "● Socle Développement Web (476h) :",
                     "- Client : Linux, HTML, CSS, Git",
