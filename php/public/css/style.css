@@ -259,6 +259,11 @@ a {
     color:aliceblue;
 }
 
+.container_realisations ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container_realisations img {
     max-width: 90%;
     margin-top: 1rem;
@@ -270,6 +275,11 @@ a {
     text-decoration: none;
     color: aliceblue;
     text-align: center;
+}
+
+.container_contact_wrapper {
+display: flex;
+justify-content: space-evenly;
 }
 
 .container_contact img {
@@ -294,6 +304,10 @@ a {
 a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active, .container_experience .card a:hover {
     text-decoration: none;
     color: rgb(255, 46, 203);
+}
+
+.modal-content {
+    background: linear-gradient(rgb(255, 46, 203, 0.6), rgba(40, 0, 78, 0.6));
 }
 
 
