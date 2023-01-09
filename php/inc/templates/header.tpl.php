@@ -42,6 +42,7 @@
                                         <li><a class="dropdown-item" href="#about">A propos de moi</a></li>
                                         <li><a class="dropdown-item" href="#formation">Formation</a></li>
                                         <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                                        <li><a class="dropdown-item" href="#competences">Compétences</a></li>
                                         <li><a class="dropdown-item" href="#realisations">Réalisations</a></li>
                                         <li><a class="dropdown-item" href="#contact">Me contacter</a></li>
                                     </ul>
@@ -64,6 +65,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#experience">Experience</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#competences">Compétences</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#realisations">Réalisations</a>

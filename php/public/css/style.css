@@ -151,18 +151,23 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 h3 {
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
 h4 {
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
-.container_formation h1, .container_formation h2, .container_realisations h1, .container_realisations h2 {
+h5 {
+    font-size: 1.1rem;
+}
+
+.container_formation h1, .container_formation h2, .container_competences h1, .container_contact h1 {
     color: aliceblue;
 }
 
@@ -195,6 +200,11 @@ a {
     color: rgba(40, 0, 78, 0.726);
 }
 
+.btn-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 /*------------------------- MAIN -------------------------*/
 
 #about {
@@ -202,16 +212,16 @@ a {
     padding-top: 7rem;
 }
 
-#formation, #experience, #realisations, #contact {
+#formation, #experience, #competences, #realisations, #contact {
     padding-top: 7rem;
 }
 
-.container_about, .container_formation, .container_experience, .container_realisations, .container_contact, footer {
+.container_about, .container_formation, .container_experience, .container_competences, .container_realisations, .container_contact, footer {
     padding: 1rem;
     box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
 }
 
-.container_about, .container_experience, .container_contact {
+.container_about, .container_experience, .container_realisations {
     background-color: aliceblue;
 }
 
@@ -219,9 +229,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 
-.container_about_left, .container_about_right, .container_formation_wrapper, .container_experience_wrapper, .container_realisations_wrapper, .container_contact_wrapper {
+.container_about_left, .container_about_right, .container_formation_wrapper, .container_experience_wrapper, .container_competences_wrapper, .container_realisations_wrapper, .container_contact_wrapper {
     padding: 1rem;
     margin-top: 2rem;
 }
@@ -259,34 +270,40 @@ a {
     color:aliceblue;
 }
 
-.container_realisations ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container_realisations img {
-    max-width: 90%;
-    margin-top: 1rem;
-    border: #f0f8ff3b 0.06rem solid;
-    border-style: dashed;
+.container_about_wrapper, .container_realisations_wrapper {
+    flex-direction: row;
 }
 
-.btn-link, .container_realisations a {
-    text-decoration: none;
-    color: aliceblue;
+.container_competences_wrapper {
     text-align: center;
 }
 
+.container_competences img {
+    width: 5rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.container_realisations_wrapper .card {
+    margin: 1rem;
+    background-color: rgba(40, 0, 78, 0.726);
+    border: none;
+    box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
+}
+
+.container_realisations_wrapper .card-title {
+    text-align: center;
+    color: aliceblue;
+}
+
 .container_contact_wrapper {
-display: flex;
-justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .container_contact img {
     max-width: 5rem;
     margin-top: 1rem;
-    border: #f0f8ff3b 0.06rem solid;
-    border-style: dashed;
     position: relative;
     transition-duration: 0.8s;
     transition-property: transform;

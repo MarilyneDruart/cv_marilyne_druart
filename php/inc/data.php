@@ -129,20 +129,46 @@
 // ------------------------------- Realisations -------------------------------
 
     $realisationList = [
-        1 => [
-            'type' => "E-commerce",
-            'title' => "-> Atopia Graphics",
-            'link' => "https://github.com/MarilyneDruart/atopia_graphics",
-            'picture' => "php/public/img/logo_atopia.png",
-            'alt' => "logo_atopia",
+        // 1 => [
+        //     'title' => "E-commerce : Atopia Graphics",
+        //     'link' => "https://github.com/MarilyneDruart/atopia_graphics",
+        //     'picture' => "php/public/img/logo_atopia.png",
+        //     'alt' => "logo_atopia",
+        // ],
+        // 2 => [
+        //     'title' => "Sur-mesure : GDF loot council",
+        //     'link' => "https://github.com/MarilyneDruart/gdf_loot",
+        //     'picture' => "php/public/img/logo_gdf.png",
+        //     'alt' => "logo_gdf",
+        // ],
+        3 => [
+            'title' => "Projet de fin de formation : Tribu",
+            'link' => "https://github.com/MarilyneDruart/projet_tribu-formation-back",
+            'picture' => "php/public/img/img_realisations/tribu.png",
+            'alt' => "site_tribu",
         ],
-        2 => [
-            'type' => "Sur-mesure",
-            'title' => "-> GDF loot council",
-            'link' => "https://github.com/MarilyneDruart/gdf_loot",
-            'picture' => "php/public/img/logo_gdf.png",
-            'alt' => "logo_gdf",
+        4 => [
+            'title' => "Titre Professionnel - Compétence 1 : Users stories & Wireframes",
+            'link' => "https://github.com/MarilyneDruart/cp1_users-stories_wireframes",
+            'picture' => "php/public/img/img_realisations/cp1.png",
+            'alt' => "",
+        ],
+        5 => [
+            'title' => "Titre Professionnel - Compétence 2 : Interface responsive",
+            'link' => "https://github.com/MarilyneDruart/cp2_responsive_cameleons",
+            'picture' => "php/public/img/img_realisations/cp2.png",
+            'alt' => "",
+        ],
+        6 => [
+            'title' => "Titre Professionnel - Compétence 3 : Interface dynamique",
+            'link' => "https://github.com/MarilyneDruart/cp3_dynamique_quizz",
+            'picture' => "php/public/img/img_realisations/cp3.png",
+            'alt' => "",
+        ],
+        7 => [
+            'title' => "Titre Professionnel - Compétences 5-6-7 : Gestion de base de données",
+            'link' => "https://github.com/MarilyneDruart/cp5-6-7_oshop_back",
+            'picture' => "php/public/img/img_realisations/cp5-6-7.png",
+            'alt' => "",
         ],
     ];
-
-

@@ -17,11 +17,7 @@
                 </p>
 
                 <p>
-                    J'ai suivi une formation de Développeur Web et Web mobile. En 6 mois nous avons appris comment faire une intégration HTML/CSS, le Responsive Design et son Mobile First ; le DOM, JavaScript et ses événements ; la programmation PHP et la Programmation Orientée Objet ; la création d’une base de données et les requêtes SQL, la création d’une API ; les bonnes pratiques et le rangement du code grâce à des architectures telles le MVC ou encore le CRUD ; la spécialisation Symfony et tous ses composants qui facilitent la vie du développeur.
-                </p>
-
-                <p>
-                    Enfin, nous avons réalisé un projet de groupe, encadrés par l’équipe pédagogique, dans un délai de 4 semaines. De la conception au déploiement, nous avons pu mettre en application toutes les notions apprises en cours.
+                    J'ai suivi une formation de Développeur Web et Web mobile de 6 mois qui s'est concrétisée par un projet professionnel de groupe, d'une durée de 4 semaines, encadré par l’équipe pédagogique. De la conception au déploiement, nous avons pu mettre en application toutes les notions apprises en cours.
                 </p> 
             </div>
             <div class="container_about_right">
@@ -33,12 +29,12 @@
         <h1 class="titreBorder">
             Formation
         </h1>
-        <?php foreach ($formationList as $value) :?>
             <div class="container_formation_wrapper">
+            <?php foreach ($formationList as $value) :?>
                 <h2>
                     <?= $value['title'] ?>
                     <a class="btn btn-link" data-bs-toggle="collapse" href="#collapse<?= $value['collapse'] ?>" role="button" aria-expanded="false" aria-controls="collapse<?= $value['collapse'] ?>">
-                        ... détail
+                        <i class="bi bi-search"></i>
                     </a>
                 </h2>
                 <div class="collapse" id="collapse<?= $value['collapse'] ?>">
@@ -56,19 +52,19 @@
                         </ul>
                     </div>
                 </div>
+                <?php endforeach; ?>
             </div>
-        <?php endforeach; ?>
     </div>
     <div class="container_experience" id="experience">
         <h1 class="titreBorder">
             Experience
         </h1>
-        <?php foreach ($experienceList as $value) :?>
             <div class="container_experience_wrapper">
+                <?php foreach ($experienceList as $value) :?>
                 <h2>
                     <?= $value['title'] ?>
                     <a class="btn btn-link" data-bs-toggle="collapse" href="#collapse<?= $value['collapse'] ?>" role="button" aria-expanded="false" aria-controls="collapse<?= $value['collapse'] ?>">
-                        ... détail
+                        <i class="bi bi-search"></i>
                     </a>
                 </h2>
                 <div class="collapse" id="collapse<?= $value['collapse'] ?>">
@@ -86,22 +82,43 @@
                         </ul>
                     </div>
                 </div>
+                <?php endforeach; ?>
             </div>
-        <?php endforeach; ?>
+    </div>
+    <div class="container_competences" id="competences">
+        <h1 class="titreBorder">
+            Compétences techniques
+        </h1>
+        <div class="container_competences_wrapper">
+            <img src="php/public/img/logo_competences/logo_vscode" alt="logo_vscode">
+            <img src="php/public/img/logo_competences/logo_html" alt="logo_html">
+            <img src="php/public/img/logo_competences/logo_css" alt="logo_css">
+            <img src="php/public/img/logo_competences/logo_responsive_design" alt="logo_responsive_design">
+            <img src="php/public/img/logo_competences/logo_javascript" alt="logo_javascript">
+            <img src="php/public/img/logo_competences/logo_php" alt="logo_php">
+            <img src="php/public/img/logo_competences/logo_symfony" alt="logo_symfony">
+            <img src="php/public/img/logo_competences/logo_mysql" alt="logo_mysql">
+            <img src="php/public/img/logo_competences/logo_notepad" alt="logo_notepad">
+            <img src="php/public/img/logo_competences/logo_git" alt="logo_git">
+            <img src="php/public/img/logo_competences/logo_filezilla" alt="logo_filezilla">
+            <img src="php/public/img/logo_competences/logo_bootstrap" alt="logo_bootstrap">
+            <img src="php/public/img/logo_competences/logo_prestashop" alt="logo_prestashop">
+        </div>
     </div>
     <div class="container_realisations" id="realisations">
         <h1 class="titreBorder">
             Réalisations
         </h1>
-        <?php foreach ($realisationList as $value) :?>
-            <div class="container_realisations_wrapper">
-                <ul>
-                    <li><h2><?= $value['type'] ?></h2></li>
-                    <li><h3><?= $value['title'] ?></h3></li>
-                    <li><a href="<?= $value['link'] ?>" target="_blank"><img src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>"></a></li>
-                </ul>
+        <div class="container_realisations_wrapper">
+            <?php foreach ($realisationList as $value) :?>
+            <div class="card" style="width: 18rem;">
+            <a href="<?= $value['link'] ?>" target="_blank" ><img class="card-img-top" src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><?= $value['title'] ?></h5>
+                </div>
             </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
     </div>
     <div class="container_contact" id="contact">
         <h1 class="titreBorder">
