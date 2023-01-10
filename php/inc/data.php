@@ -126,8 +126,90 @@
 
     ];
 
-// ------------------------------- Realisations -------------------------------
 
+
+// ------------------------------- Compétences -------------------------------
+    $competenceList = [
+        1 => [
+            'picture' => "php/public/img/logo_competences/logo_vscode",
+            'alt' => "logo_vscode",
+            'title' => "VS Code",
+        ],
+
+        2 => [
+            'picture' => "php/public/img/logo_competences/logo_html",
+            'alt' => "logo_html",
+            'title' => "HTML",
+        ],
+
+        3 => [
+            'picture' => "php/public/img/logo_competences/logo_css",
+            'alt' => "logo_css",
+            'title' => "CSS",
+        ],
+
+        // 4 => [
+        //     'picture' => "php/public/img/logo_competences/logo_responsive_design",
+        //     'alt' => "logo_responsive_design",
+        //     'title' => "",
+        // ],
+
+        5 => [
+            'picture' => "php/public/img/logo_competences/logo_javascript",
+            'alt' => "logo_javascript",
+            'title' => "Javascript",
+        ],
+
+        6 => [
+            'picture' => "php/public/img/logo_competences/logo_php",
+            'alt' => "logo_php",
+            'title' => "PHP",
+        ],
+
+        7 => [
+            'picture' => "php/public/img/logo_competences/logo_symfony",
+            'alt' => "logo_symfony",
+            'title' => "Symfony",
+        ],
+
+        8 => [
+            'picture' => "php/public/img/logo_competences/logo_mysql",
+            'alt' => "logo_mysql",
+            'title' => "MySQL",
+        ],
+
+        // 9 => [
+        //     'picture' => "php/public/img/logo_competences/logo_notepad",
+        //     'alt' => "logo_notepad",
+        //     'title' => "Notepad++",
+        // ],
+
+        10 => [
+            'picture' => "php/public/img/logo_competences/logo_git",
+            'alt' => "logo_git",
+            'title' => "Git",
+        ],
+
+        // 11 => [
+        //     'picture' => "php/public/img/logo_competences/logo_filezilla",
+        //     'alt' => "logo_filezilla",
+        //     'title' => "FileZilla",
+        // ],
+
+        12 => [
+            'picture' => "php/public/img/logo_competences/logo_bootstrap",
+            'alt' => "logo_bootstrap",
+            'title' => "Bootstrap",
+        ],
+
+        13 => [
+            'picture' => "php/public/img/logo_competences/logo_prestashop",
+            'alt' => "logo_prestashop",
+            'title' => "Prestashop",
+        ],
+    ];
+
+// ------------------------------- Realisations -------------------------------
     $realisationList = [
         // 1 => [
         //     'title' => "E-commerce : Atopia Graphics",
@@ -148,25 +230,25 @@
             'alt' => "site_tribu",
         ],
         4 => [
-            'title' => "Titre Professionnel - Compétence 1 : Users stories & Wireframes",
+            'title' => "Users stories & Wireframes",
             'link' => "https://github.com/MarilyneDruart/cp1_users-stories_wireframes",
             'picture' => "php/public/img/img_realisations/cp1.png",
             'alt' => "",
         ],
         5 => [
-            'title' => "Titre Professionnel - Compétence 2 : Interface responsive",
+            'title' => "Interface responsive",
             'link' => "https://github.com/MarilyneDruart/cp2_responsive_cameleons",
             'picture' => "php/public/img/img_realisations/cp2.png",
             'alt' => "",
         ],
         6 => [
-            'title' => "Titre Professionnel - Compétence 3 : Interface dynamique",
+            'title' => "Interface dynamique",
             'link' => "https://github.com/MarilyneDruart/cp3_dynamique_quizz",
             'picture' => "php/public/img/img_realisations/cp3.png",
             'alt' => "",
         ],
         7 => [
-            'title' => "Titre Professionnel - Compétences 5-6-7 : Gestion de base de données",
+            'title' => "Gestion de base de données",
             'link' => "https://github.com/MarilyneDruart/cp5-6-7_oshop_back",
             'picture' => "php/public/img/img_realisations/cp5-6-7.png",
             'alt' => "",

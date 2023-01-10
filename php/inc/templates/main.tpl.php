@@ -90,19 +90,14 @@
             Compétences techniques
         </h1>
         <div class="container_competences_wrapper">
-            <img src="php/public/img/logo_competences/logo_vscode" alt="logo_vscode">
-            <img src="php/public/img/logo_competences/logo_html" alt="logo_html">
-            <img src="php/public/img/logo_competences/logo_css" alt="logo_css">
-            <img src="php/public/img/logo_competences/logo_responsive_design" alt="logo_responsive_design">
-            <img src="php/public/img/logo_competences/logo_javascript" alt="logo_javascript">
-            <img src="php/public/img/logo_competences/logo_php" alt="logo_php">
-            <img src="php/public/img/logo_competences/logo_symfony" alt="logo_symfony">
-            <img src="php/public/img/logo_competences/logo_mysql" alt="logo_mysql">
-            <img src="php/public/img/logo_competences/logo_notepad" alt="logo_notepad">
-            <img src="php/public/img/logo_competences/logo_git" alt="logo_git">
-            <img src="php/public/img/logo_competences/logo_filezilla" alt="logo_filezilla">
-            <img src="php/public/img/logo_competences/logo_bootstrap" alt="logo_bootstrap">
-            <img src="php/public/img/logo_competences/logo_prestashop" alt="logo_prestashop">
+            <?php foreach ($competenceList as $value) :?>
+                <div class="container_competences_wrapper_hover">
+                    <img src="<?= $value['picture'] ?>" alt=<?= $value['alt'] ?>/>
+                    <div class="container_competences_wrapper_img_content">
+                        <div class="text"><?= $value['title'] ?></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="container_realisations" id="realisations">
@@ -111,12 +106,16 @@
         </h1>
         <div class="container_realisations_wrapper">
             <?php foreach ($realisationList as $value) :?>
-            <div class="card" style="width: 18rem;">
-            <a href="<?= $value['link'] ?>" target="_blank" ><img class="card-img-top" src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>"></a>
-                <div class="card-body">
-                    <h5 class="card-title"><?= $value['title'] ?></h5>
+            <a href="<?= $value['link'] ?>" target="_blank">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img class="card-img-top" src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $value['title'] ?></h5>
+                    </div>
                 </div>
-            </div>
+            </a>
             <?php endforeach; ?>
         </div>
     </div>
@@ -125,10 +124,9 @@
             Me contacter
         </h1>
         <div class="container_contact_wrapper">
-            <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="<?= $value['alt'] ?>"></a>
-            <!-- <p><span>&#128072;</span>Envoyez-moi un message<span>&#128073;</span></p> -->
-
-            <a href="https://github.com/MarilyneDruart" target="_blank"><img src="php/public/img/logo_github.png" alt="<?= $value['alt'] ?>"></a>
+            <a data-toggle="tooltip" href="mailto:marilyne.druart@outlook.com" target="_blank"><img src="php/public/img/logo_mail.png" alt="envoyer_mail" title="Envoyer un email" ></a>
+            <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="logo_linkedin" title="Envoyer un message sur Linkedin"></a>
+            <a href="php/public/documents/CV_DRUART_Marilyne.pdf" target="_blank"><img src="php/public/img/logo_telechargement.png" alt="télécharger_CV" title="Coordonnées sur mon CV"></a>
         </div>
     </div>
     <a href="#top">

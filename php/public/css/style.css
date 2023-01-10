@@ -153,6 +153,7 @@ h1 {
 h2 {
     font-size: 1.4rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 h3 {
@@ -251,7 +252,6 @@ a {
     vertical-align: initial;
 }
 
-
 .container_formation .card-body, .container_formation .card li, .container_formation .card p {
     color: black;
     background-color:aliceblue;
@@ -276,6 +276,9 @@ a {
 
 .container_competences_wrapper {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container_competences img {
@@ -284,11 +287,34 @@ a {
     margin: 1rem;
 }
 
+.container_competences_wrapper_img_content {
+    color:rgba(240, 248, 255, 0.623);
+    text-align: center;
+}
+
 .container_realisations_wrapper .card {
+    width: 16rem;
+    height: 19.4rem;
     margin: 1rem;
     background-color: rgba(40, 0, 78, 0.726);
     border: none;
     box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
+}
+
+.card-img-container {
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 15rem;
+    width: auto;
+}
+
+.container_realisations_wrapper .card-body {
+    height: 2.4rem;
 }
 
 .container_realisations_wrapper .card-title {
@@ -298,12 +324,12 @@ a {
 
 .container_contact_wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .container_contact img {
-    max-width: 5rem;
-    margin-top: 1rem;
+    max-width: 3.5rem;
+    margin: 1rem 1rem 0 1rem;
     position: relative;
     transition-duration: 0.8s;
     transition-property: transform;
@@ -353,15 +379,6 @@ a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:
 /* ------------------------- DESKTOP ------------------------- */
 @media(min-width: 992px) {
     
-    .nav-dropdown-burger {
-        display: none;
-    }
-
-    .large-nav {
-        display:initial;
-    }
-    
-
     .container_about .wrapper {
         flex-direction: row;
     }
@@ -373,4 +390,21 @@ a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:
     .container_realisations img {
         max-width: 27rem;
     }
+
+    .container_contact img {
+        max-width: 5rem;
+    }
+}
+
+/* ------------------------- Navbar responsive ------------------------- */
+
+@media(min-width: 1180px) {
+    .nav-dropdown-burger {
+        display: none;
+    }
+
+    .large-nav {
+        display:initial;
+    }
+
 }
