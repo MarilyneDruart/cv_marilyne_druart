@@ -434,7 +434,21 @@ a:hover,
 }
 
 /* ------------------------- TABLET ------------------------- */
-@media(min-width: 501px) and (max-width: 991px) {
+@media(min-width: 501px) and (max-width: 1489px) {
+
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        width: 80%;
+    }
+
+    .navbar {
+        width: 80%;
+    }
 
     .container_realisations img {
         max-width: 27rem;
@@ -448,7 +462,21 @@ a:hover,
 }
 
 /* ------------------------- DESKTOP ------------------------- */
-@media(min-width: 992px) {
+@media(min-width: 1490px) {
+
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        width: 80%;
+    }
+
+    .navbar {
+        width: 80%;
+    }
 
     .container_about .wrapper {
         flex-direction: row;
@@ -473,7 +501,7 @@ a:hover,
 
 /* ------------------------- Navbar responsive ------------------------- */
 
-@media(min-width: 1180px) {
+@media(min-width: 1480px) {
     .nav-dropdown-burger {
         display: none;
     }
