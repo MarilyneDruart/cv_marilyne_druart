@@ -25,7 +25,7 @@
             'location' => "Ecole O'clock - Téléprésentiel",
             'observation' => "Promo De Vinci",
             'link' => "https://www.francecompetences.fr/recherche/rncp/31114/",
-            'nameLink' => "voir la formation O'clock",
+            'nameLink' => "voir la certification RNCP",
             'detail' => [
                 "● Socle Développement Web (476h) :",
                     "- Client : Linux, HTML, CSS, Git",
@@ -126,23 +126,146 @@
 
     ];
 
-// ------------------------------- Realisations -------------------------------
 
-    $realisationList = [
+
+// ------------------------------- Compétences -------------------------------
+    $competenceList = [
         1 => [
-            'type' => "E-commerce",
-            'title' => "-> Atopia Graphics",
-            'link' => "https://github.com/MarilyneDruart/atopia_graphics",
-            'picture' => "php/public/img/logo_atopia.png",
-            'alt' => "logo_atopia",
+            'picture' => "php/public/img/logo_competences/logo_vscode",
+            'alt' => "logo_vscode",
+            'title' => "VS Code",
         ],
+
         2 => [
-            'type' => "Sur-mesure",
-            'title' => "-> GDF loot council",
-            'link' => "https://github.com/MarilyneDruart/gdf_loot",
-            'picture' => "php/public/img/logo_gdf.png",
-            'alt' => "logo_gdf",
+            'picture' => "php/public/img/logo_competences/logo_html",
+            'alt' => "logo_html",
+            'title' => "HTML",
+        ],
+
+        3 => [
+            'picture' => "php/public/img/logo_competences/logo_css",
+            'alt' => "logo_css",
+            'title' => "CSS",
+        ],
+
+        // 4 => [
+        //     'picture' => "php/public/img/logo_competences/logo_responsive_design",
+        //     'alt' => "logo_responsive_design",
+        //     'title' => "",
+        // ],
+
+        5 => [
+            'picture' => "php/public/img/logo_competences/logo_javascript",
+            'alt' => "logo_javascript",
+            'title' => "Javascript",
+        ],
+
+        6 => [
+            'picture' => "php/public/img/logo_competences/logo_php",
+            'alt' => "logo_php",
+            'title' => "PHP",
+        ],
+
+        7 => [
+            'picture' => "php/public/img/logo_competences/logo_symfony",
+            'alt' => "logo_symfony",
+            'title' => "Symfony",
+        ],
+
+        8 => [
+            'picture' => "php/public/img/logo_competences/logo_mysql",
+            'alt' => "logo_mysql",
+            'title' => "MySQL",
+        ],
+
+        // 9 => [
+        //     'picture' => "php/public/img/logo_competences/logo_notepad",
+        //     'alt' => "logo_notepad",
+        //     'title' => "Notepad++",
+        // ],
+
+        10 => [
+            'picture' => "php/public/img/logo_competences/logo_git",
+            'alt' => "logo_git",
+            'title' => "Git",
+        ],
+
+        // 11 => [
+        //     'picture' => "php/public/img/logo_competences/logo_filezilla",
+        //     'alt' => "logo_filezilla",
+        //     'title' => "FileZilla",
+        // ],
+
+        12 => [
+            'picture' => "php/public/img/logo_competences/logo_bootstrap",
+            'alt' => "logo_bootstrap",
+            'title' => "Bootstrap",
+        ],
+
+        13 => [
+            'picture' => "php/public/img/logo_competences/logo_prestashop",
+            'alt' => "logo_prestashop",
+            'title' => "Prestashop",
         ],
     ];
 
+// ------------------------------- Realisations -------------------------------
+    $realisationList = [
+        1 => [
+            'title' => "Users stories & Wireframes",
+            'link' => "https://github.com/MarilyneDruart/cp1_users-stories_wireframes",
+            'picture' => "php/public/img/img_realisations/cp1.png",
+            'alt' => "user-stories_et_wireframes",
+            'description' => "Création de user stories et de wireframes à partir d'un MVP pour un site web qui réunira des recettes de cuisine.",
+        ],
+        2 => [
+            'title' => "Interface responsive",
+            'link' => "https://github.com/MarilyneDruart/cp2_responsive_cameleons",
+            'picture' => "php/public/img/img_realisations/cp2.png",
+            'alt' => "interface_responsive",
+            'description' => "Création de la page d'accueil d'un blog à l'identique d'une image fournie, en mobile first.",
+        ],
+        3 => [
+            'title' => "Interface dynamique",
+            'link' => "https://github.com/MarilyneDruart/cp3_dynamique_quizz",
+            'picture' => "php/public/img/img_realisations/cp3.png",
+            'alt' => "interface_dynamique",
+            'description' => "Création d’un jeu de Quizz codé en Javascript.",
+        ],
+        4 => [
+            'title' => "Gestion de base de données",
+            'link' => "https://github.com/MarilyneDruart/cp5-6-7_oshop_back",
+            'picture' => "php/public/img/img_realisations/cp5-6-7.png",
+            'alt' => "gestion_base_de_donnees",
+            'description' => "Créer une base de données et sa documentation, développer les composants d’accès aux données et développer la partie back-end d’une application web ou web mobile.",
+        ],
+        5 => [
+            'title' => "Projet de fin de formation : Tribu",
+            'link' => "https://github.com/MarilyneDruart/projet_tribu-formation-back",
+            'picture' => "php/public/img/img_realisations/tribu.png",
+            'alt' => "site_tribu",
+            'description' => "Tribu est LE réseau social qui a pour but de mettre en relation les français expatriés afin de partager des lieux d’intérêts, d’échanger des conseils et de se rencontrer dans une nouvelle ville pour faciliter l'intégration dans un pays étranger.",
+        ],
+        6 => [
+            'title' => "GDF loot council (WIP)",
+            'link' => "https://github.com/MarilyneDruart/gdf_loot",
+            'picture' => "php/public/img/img_realisations/logo-gdf.png",
+            'alt' => "logo_gdf",
+            'description' => "Cette application permet aux membres d'une guilde de consulter leur avancée au sein de celle-ci grâce à un système de scores calculés en fonction de leurs présences notamment. Elle permet d’optimiser l’attribution des items sur les Raids 25 joueurs.",
+        ],
+        7 => [
+            'title' => "Mon CV en ligne",
+            'link' => "https://github.com/MarilyneDruart/cv_marilyne_druart",
+            'picture' => "php/public/img/img_realisations/cv.png",
+            'alt' => "curriculum-vitae",
+            'description' => "Lien vers le repository de ce site. CV en ligne créé en Mobile first.",
+        ],
 
+                                // 8 => [
+        //     'title' => "E-commerce : Atopia Graphics",
+        //     'link' => "https://github.com/MarilyneDruart/atopia_graphics",
+        //     'picture' => "php/public/img/logo_atopia.png",
+        //     'alt' => "logo_atopia",
+            // 'description' => "",
+        // ],
+    ];

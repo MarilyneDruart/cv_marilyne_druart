@@ -1,5 +1,6 @@
 /* ---------------------- HTML + BODY + HEADER + FOOTER ---------------------- */
-html, body{
+html,
+body {
     background-color: rgba(40, 0, 78, 0.726);
 }
 
@@ -15,7 +16,8 @@ body {
     justify-content: space-between;
 }
 
-header, footer {
+header,
+footer {
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -50,23 +52,24 @@ footer p {
     background-color: rgba(40, 0, 78, 0.726);
     border: 0.06rem solid aliceblue;
     border-radius: 0.5rem;
-  }
+}
 
-  #scroll_to_top i {
+#scroll_to_top i {
     position: fixed;
     width: 3.1rem;
     height: 2.4rem;
     bottom: 2.7rem;
     right: 1.8rem;
 
-  }
-  #scroll_to_top #arrow_up::before {
-    font-weight:bolder !important;
-  }
+}
 
-  #scroll_to_top i:hover {
+#scroll_to_top #arrow_up::before {
+    font-weight: bolder !important;
+}
+
+#scroll_to_top i:hover {
     color: rgb(255, 46, 203);
-  }
+}
 
 /*------------------------- NAVBAR -------------------------*/
 .large-nav {
@@ -81,12 +84,12 @@ footer p {
 
 .dropdown-menu {
     background: none;
-    border:none;
+    border: none;
 }
 
 .dropdown-item {
     color: aliceblue;
-    font-weight:500;
+    font-weight: 500;
 }
 
 .navbar {
@@ -119,20 +122,27 @@ a.navbar-brand {
     font-size: 1.7rem;
 }
 
-a.navbar-brand, a.nav-link, .bi-list, .bi-list::before {
+a.navbar-brand,
+a.nav-link,
+.bi-list,
+.bi-list::before {
     color: aliceblue;
-    font-weight:bolder !important;
+    font-weight: bolder !important;
 }
 
 a.nav-link {
     font-size: large;
 }
 
-a.navbar-brand:hover, a.nav-link:hover, .bi-list:hover, .navbar-toggler {
+a.navbar-brand:hover,
+a.nav-link:hover,
+.bi-list:hover,
+.navbar-toggler {
     border-radius: 0.5rem;
 }
 
-.navbar-brand, .navbar-nav {
+.navbar-brand,
+.navbar-nav {
     --bs-nav-link-hover-color: rgb(255, 46, 203);
     --bs-navbar-brand-hover-color: rgb(255, 46, 203);
 }
@@ -151,18 +161,27 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 h3 {
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
 h4 {
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
-.container_formation h1, .container_formation h2, .container_realisations h1, .container_realisations h2 {
+h5 {
+    font-size: 1.1rem;
+}
+
+.container_formation h1,
+.container_formation h2,
+.container_competences h1,
+.container_contact h1 {
     color: aliceblue;
 }
 
@@ -195,6 +214,11 @@ a {
     color: rgba(40, 0, 78, 0.726);
 }
 
+.btn-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 /*------------------------- MAIN -------------------------*/
 
 #about {
@@ -202,26 +226,48 @@ a {
     padding-top: 7rem;
 }
 
-#formation, #experience, #realisations, #contact {
+#formation,
+#experience,
+#competences,
+#realisations,
+#contact {
     padding-top: 7rem;
 }
 
-.container_about, .container_formation, .container_experience, .container_realisations, .container_contact, footer {
+.container_about,
+.container_formation,
+.container_experience,
+.container_competences,
+.container_realisations,
+.container_contact,
+footer {
     padding: 1rem;
     box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
 }
 
-.container_about, .container_experience, .container_contact {
+.container_about,
+.container_experience,
+.container_realisations {
     background-color: aliceblue;
 }
 
-.container_about_wrapper, .container_formation_wrapper, .container_experience_wrapper, .container_realisations_wrapper {
+.container_about_wrapper,
+.container_formation_wrapper,
+.container_experience_wrapper,
+.container_realisations_wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 
-.container_about_left, .container_about_right, .container_formation_wrapper, .container_experience_wrapper, .container_realisations_wrapper, .container_contact_wrapper {
+.container_about_left,
+.container_about_right,
+.container_formation_wrapper,
+.container_experience_wrapper,
+.container_competences_wrapper,
+.container_realisations_wrapper,
+.container_contact_wrapper {
     padding: 1rem;
     margin-top: 2rem;
 }
@@ -240,43 +286,107 @@ a {
     vertical-align: initial;
 }
 
-
-.container_formation .card-body, .container_formation .card li, .container_formation .card p {
+.container_formation .card-body,
+.container_formation .card li,
+.container_formation .card p {
     color: black;
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
 
 .container_experience .btn-link {
     color: black;
 }
 
-.container_experience .card-body, .container_experience .card {
-    color:aliceblue;
+.container_experience .card-body,
+.container_experience .card {
+    color: aliceblue;
     background-color: rgba(40, 0, 78, 0.726);
 }
 
 .container_experience .card a {
-    color:aliceblue;
-}
-
-.container_realisations img {
-    max-width: 90%;
-    margin-top: 1rem;
-    border: #f0f8ff3b 0.06rem solid;
-    border-style: dashed;
-}
-
-.btn-link, .container_realisations a {
-    text-decoration: none;
     color: aliceblue;
+}
+
+.container_about_wrapper,
+.container_realisations_wrapper {
+    flex-direction: row;
+}
+
+.container_competences_wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_competences img {
+    width: 5rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.container_competences_wrapper_img_content {
+    color: rgba(240, 248, 255, 0.623);
     text-align: center;
 }
 
+.container_realisations_wrapper .card {
+    width: 16rem;
+    height: 19.4rem;
+    margin: 1rem;
+    background-color: rgba(40, 0, 78, 0.726);
+    border: none;
+    box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
+}
+
+.card-img-container {
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card-img-top {
+    height: 15rem;
+    width: auto;
+}
+
+.container_realisations_wrapper .card-text {
+    opacity: 0;
+    position: absolute;
+    padding: 1rem;
+    color: aliceblue;
+    background-color: rgba(40, 0, 78, 0.726);
+    box-shadow: 0 0.06rem 1rem rgb(0 0 0 / 40%);
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+}
+
+.container_realisations_wrapper .card-text:hover {
+    opacity: 1;
+}
+
+.container_realisations_wrapper .card-body {
+    height: 2.4rem;
+}
+
+.container_realisations_wrapper .card-title {
+    text-align: center;
+    color: aliceblue;
+}
+
+.container_contact_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .container_contact img {
-    max-width: 5rem;
-    margin-top: 1rem;
-    border: #f0f8ff3b 0.06rem solid;
-    border-style: dashed;
+    max-width: 3.5rem;
+    margin: 1rem 1rem 0 1rem;
     position: relative;
     transition-duration: 0.8s;
     transition-property: transform;
@@ -291,9 +401,27 @@ a {
     justify-content: center;
 }
 
-a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active, .container_experience .card a:hover {
+.container_contact_wrapper_a_content {
+    color: rgba(240, 248, 255, 0.623);
+    text-align: center;
+    margin-top: 1rem;
+    width: 112px;
+}
+
+a:hover,
+.btn-link:hover,
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active,
+.container_experience .card a:hover {
     text-decoration: none;
     color: rgb(255, 46, 203);
+}
+
+.modal-content {
+    background: linear-gradient(rgb(255, 46, 203, 0.6), rgba(40, 0, 78, 0.6));
 }
 
 
@@ -315,31 +443,43 @@ a:hover, .btn-link:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:
     /* .navbar-nav .dropdown-item {
         display: none;
     } */
-    
+
 
 }
 
 /* ------------------------- DESKTOP ------------------------- */
 @media(min-width: 992px) {
-    
-    .nav-dropdown-burger {
-        display: none;
-    }
-
-    .large-nav {
-        display:initial;
-    }
-    
 
     .container_about .wrapper {
         flex-direction: row;
     }
 
-    .container_about, .container_formation, .container_experience, .container_realisations, .container_contact {
+    .container_about,
+    .container_formation,
+    .container_experience,
+    .container_realisations,
+    .container_contact {
         padding: 3rem;
     }
 
     .container_realisations img {
         max-width: 27rem;
     }
+
+    .container_contact img {
+        max-width: 5rem;
+    }
+}
+
+/* ------------------------- Navbar responsive ------------------------- */
+
+@media(min-width: 1180px) {
+    .nav-dropdown-burger {
+        display: none;
+    }
+
+    .large-nav {
+        display: initial;
+    }
+
 }

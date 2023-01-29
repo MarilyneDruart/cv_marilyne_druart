@@ -11,8 +11,6 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 
         <!-- Bootstrap icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -23,13 +21,13 @@
         <!-- favicon -->
         <link rel="shortcut icon" href="php/public/img/favicon.ico" type="image/x-icon">
 
-		<title>CV Marilyne Druart - <?= $pageToDisplay ?></title>
+		<title>CV Marilyne Druart</title>
     </head>
 
     <body>
         <div class="wrapper" id="top">
             <header>
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-xl">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#top">Marilyne Druart</a>
 
@@ -44,8 +42,10 @@
                                         <li><a class="dropdown-item" href="#about">A propos de moi</a></li>
                                         <li><a class="dropdown-item" href="#formation">Formation</a></li>
                                         <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                                        <li><a class="dropdown-item" href="#competences">Compétences</a></li>
                                         <li><a class="dropdown-item" href="#realisations">Réalisations</a></li>
                                         <li><a class="dropdown-item" href="#contact">Me contacter</a></li>
+                                        <li><a class="dropdown-item" href="php/public/documents/CV_DRUART_Marilyne.pdf" target="_blank" class="curriculum-text">Télécharger mon CV au format PDF</a></li>
                                     </ul>
                                 </ul>
                             </div>
@@ -68,10 +68,16 @@
                                             <a class="nav-link" href="#experience">Experience</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link" href="#competences">Compétences</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#realisations">Réalisations</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#contact">Me contacter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="php/public/documents/CV_DRUART_Marilyne.pdf" target="_blank" class="curriculum-text">CV au format PDF</a>
                                         </li>
                                     </ul>
                                 </div>

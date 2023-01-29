@@ -8,33 +8,17 @@
         <div class="container_about_wrapper">
             <div class="container_about_left">
                 <p>
-                    Après un parcours évolutif au sein des entreprises pour lesquelles j’ai travaillé, j’ai été recrutée
-                    pour gérer un projet de refonte d’un site internet et de son Back-Office.
+                    Après un parcours évolutif au sein des entreprises pour lesquelles j’ai travaillé, ma dernière expérience consitait en la gestion d'un projet de refonte d’un site internet et de son Back-Office.
                 </p>
 
                 <p>
-                    Cette expérience a été très enrichissante sur les plans professionnel et personnel. J’ai travaillé avec
-                    différents types de métiers dont direction, RH, administration, finance, agence de conseil et de
-                    marketing digital , agence de conception et développement de sites et de logiciels web, … . La
-                    collaboration avec les développeurs a été une révélation. Je voulais comprendre ce qu’ils faisaient,
-                    savoir le faire moi aussi. C’est comme ça que j’ai décidé d’entamer une reconversion professionnelle en
-                    tant que développeuse Web et que j’ai trouvé l’école O’clock pour y parvenir.
-                </p>
-
-                <!-- <p>
-                    La formation de Développeur Web et Web mobile dispensée par l’école est très complète. En 6 mois nous
-                    avons appris comment faire une intégration HTML/CSS, le Responsive Design et son Mobile First ; le DOM,
-                    JavaScript et ses événements ; la programmation PHP et la Programmation Orientée Objet ; la création
-                    d’une base de données et les requêtes SQL, la création d’une API ; les bonnes pratiques et le rangement
-                    du code grâce à des architectures telles le MVC ou encore le CRUD ; la spécialisation Symfony et tous
-                    ses composants qui facilitent la vie du développeur.
+                    J’ai travaillé avec différents types de métiers dont les développeurs web. La collaboration avec ces derniers a été une révélation. Je voulais comprendre ce qu’ils faisaient, savoir le faire moi aussi. C’est comme ça que j’ai décidé d’entamer une reconversion professionnelle en
+                    tant que développeuse Web.
                 </p>
 
                 <p>
-                    Pour conclure la formation, nous avons réalisé un projet de groupe, encadrés par l’équipe pédagogique,
-                    dans un délai de 4 semaines. De la conception au déploiement, nous avons pu mettre en application toutes
-                    les notions apprises en cours.
-                </p>  -->
+                    J'ai suivi une formation de Développeur Web et Web mobile de 6 mois qui s'est concrétisée par un projet professionnel de groupe, d'une durée de 4 semaines, encadré par l’équipe pédagogique. De la conception au déploiement, nous avons pu mettre en application toutes les notions apprises en cours.
+                </p> 
             </div>
             <div class="container_about_right">
                 <img class="container_about_right_profil" src="php/public/img/MD.jpg" alt="photo_profil">
@@ -45,12 +29,12 @@
         <h1 class="titreBorder">
             Formation
         </h1>
-        <?php foreach ($formationList as $value) :?>
             <div class="container_formation_wrapper">
+            <?php foreach ($formationList as $value) :?>
                 <h2>
                     <?= $value['title'] ?>
                     <a class="btn btn-link" data-bs-toggle="collapse" href="#collapse<?= $value['collapse'] ?>" role="button" aria-expanded="false" aria-controls="collapse<?= $value['collapse'] ?>">
-                        ... détail
+                        <i class="bi bi-search"></i>
                     </a>
                 </h2>
                 <div class="collapse" id="collapse<?= $value['collapse'] ?>">
@@ -68,19 +52,19 @@
                         </ul>
                     </div>
                 </div>
+                <?php endforeach; ?>
             </div>
-        <?php endforeach; ?>
     </div>
     <div class="container_experience" id="experience">
         <h1 class="titreBorder">
             Experience
         </h1>
-        <?php foreach ($experienceList as $value) :?>
             <div class="container_experience_wrapper">
+                <?php foreach ($experienceList as $value) :?>
                 <h2>
                     <?= $value['title'] ?>
                     <a class="btn btn-link" data-bs-toggle="collapse" href="#collapse<?= $value['collapse'] ?>" role="button" aria-expanded="false" aria-controls="collapse<?= $value['collapse'] ?>">
-                        ... détail
+                        <i class="bi bi-search"></i>
                     </a>
                 </h2>
                 <div class="collapse" id="collapse<?= $value['collapse'] ?>">
@@ -98,30 +82,67 @@
                         </ul>
                     </div>
                 </div>
+                <?php endforeach; ?>
             </div>
-        <?php endforeach; ?>
+    </div>
+    <div class="container_competences" id="competences">
+        <h1 class="titreBorder">
+            Compétences techniques
+        </h1>
+        <div class="container_competences_wrapper">
+            <?php foreach ($competenceList as $value) :?>
+                <div class="container_competences_wrapper_hover">
+                    <img src="<?= $value['picture'] ?>" alt=<?= $value['alt'] ?>/>
+                    <div class="container_competences_wrapper_img_content">
+                        <div class="text"><?= $value['title'] ?></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
     <div class="container_realisations" id="realisations">
         <h1 class="titreBorder">
             Réalisations
         </h1>
-        <?php foreach ($realisationList as $value) :?>
-            <div class="container_realisations_wrapper">
-                <ul>
-                    <li><h2><?= $value['type'] ?></h2></li>
-                    <li><h3><?= $value['title'] ?></h3></li>
-                    <li><a href="<?= $value['link'] ?>" target="_blank"><img src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>"></a></li>
-                </ul>
-            </div>
-        <?php endforeach; ?>
+        <div class="container_realisations_wrapper">
+            <?php foreach ($realisationList as $value) :?>
+            <a href="<?= $value['link'] ?>" target="_blank">
+                <div class="card">
+                    <div class="card-img-container">
+                        <p class="card-text"><?= $value['description'] ?></p>
+                        <img class="card-img-top" src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $value['title'] ?></h5>
+                    </div>
+                </div>
+            </a>
+            <?php endforeach; ?>
+        </div>
     </div>
     <div class="container_contact" id="contact">
         <h1 class="titreBorder">
             Me contacter
         </h1>
         <div class="container_contact_wrapper">
-            <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="<?= $value['alt'] ?>"></a>
-            <a href="https://github.com/MarilyneDruart" target="_blank"><img src="php/public/img/logo_github.png" alt="<?= $value['alt'] ?>"></a>
+            <div class="container_contact_wrapper_mail">
+                <a data-toggle="tooltip" href="mailto:marilyne.druart@outlook.com" target="_blank"><img src="php/public/img/logo_mail.png" alt="envoyer_mail" title="Envoyer un email" ></a>
+                <div class="container_contact_wrapper_a_content">
+                    <div class="text">Par mail</div>
+                </div>
+            </div>
+            <div class="container_contact_wrapper_linkedin">
+                <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="logo_linkedin" title="Envoyer un message sur Linkedin"></a>
+                <div class="container_contact_wrapper_a_content">
+                    <div class="text">Sur Linkedin</div>
+                </div>
+            </div>
+            <div class="container_contact_wrapper_cv">
+                <a href="php/public/documents/CV_DRUART_Marilyne.pdf" target="_blank"><img src="php/public/img/logo_telechargement.png" alt="télécharger_CV" title="Coordonnées sur mon CV"></a>
+                <div class="container_contact_wrapper_a_content">
+                    <div class="text">Coordonnées sur mon CV</div>
+                </div>
+            </div>
         </div>
     </div>
     <a href="#top">
