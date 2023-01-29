@@ -109,6 +109,7 @@
             <a href="<?= $value['link'] ?>" target="_blank">
                 <div class="card">
                     <div class="card-img-container">
+                        <p class="card-text"><?= $value['description'] ?></p>
                         <img class="card-img-top" src="<?= $value['picture'] ?>" alt="<?= $value['alt'] ?>">
                     </div>
                     <div class="card-body">
@@ -124,9 +125,24 @@
             Me contacter
         </h1>
         <div class="container_contact_wrapper">
-            <a data-toggle="tooltip" href="mailto:marilyne.druart@outlook.com" target="_blank"><img src="php/public/img/logo_mail.png" alt="envoyer_mail" title="Envoyer un email" ></a>
-            <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="logo_linkedin" title="Envoyer un message sur Linkedin"></a>
-            <a href="php/public/documents/CV_DRUART_Marilyne.pdf" target="_blank"><img src="php/public/img/logo_telechargement.png" alt="télécharger_CV" title="Coordonnées sur mon CV"></a>
+            <div class="container_contact_wrapper_mail">
+                <a data-toggle="tooltip" href="mailto:marilyne.druart@outlook.com" target="_blank"><img src="php/public/img/logo_mail.png" alt="envoyer_mail" title="Envoyer un email" ></a>
+                <div class="container_contact_wrapper_a_content">
+                    <div class="text">Par mail</div>
+                </div>
+            </div>
+            <div class="container_contact_wrapper_linkedin">
+                <a href="https://www.linkedin.com/in/marilyne-druart" target="_blank"><img src="php/public/img/logo_linkedin.png" alt="logo_linkedin" title="Envoyer un message sur Linkedin"></a>
+                <div class="container_contact_wrapper_a_content">
+                    <div class="text">Sur Linkedin</div>
+                </div>
+            </div>
+            <div class="container_contact_wrapper_cv">
+                <a href="php/public/documents/CV_DRUART_Marilyne.pdf" target="_blank"><img src="php/public/img/logo_telechargement.png" alt="télécharger_CV" title="Coordonnées sur mon CV"></a>
+                <div class="container_contact_wrapper_a_content">
+                    <div class="text">Coordonnées sur mon CV</div>
+                </div>
+            </div>
         </div>
     </div>
     <a href="#top">
