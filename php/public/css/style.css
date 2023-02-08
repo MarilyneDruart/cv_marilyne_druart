@@ -83,7 +83,7 @@ footer p {
 }
 
 .dropdown-menu {
-    background: none;
+    background: rgba(40, 0, 78, 0.6);
     border: none;
 }
 
@@ -145,6 +145,10 @@ a.nav-link:hover,
 .navbar-nav {
     --bs-nav-link-hover-color: rgb(255, 46, 203);
     --bs-navbar-brand-hover-color: rgb(255, 46, 203);
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
 }
 
 /* ul.navbar-nav {
