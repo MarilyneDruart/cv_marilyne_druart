@@ -1,7 +1,10 @@
 /* ---------------------- HTML + BODY + HEADER + FOOTER ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html,
 body {
     background-color: rgba(40, 0, 78, 0.726);
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -315,6 +318,12 @@ footer {
 .container_realisations_wrapper {
     flex-direction: row;
 }
+
+.container_realisations_wrapper .card-text {
+    
+    font-size: 0.9rem;
+}
+
 
 .container_competences_wrapper {
     text-align: center;

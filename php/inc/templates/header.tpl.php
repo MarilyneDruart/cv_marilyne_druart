@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="Bf6B8zf5oY67SMGVbpbRKAnYatv20Xc4XWUyMVDYrx8" />
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="php/public/css/reset.css">

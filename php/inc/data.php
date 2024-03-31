@@ -243,22 +243,43 @@
             'title' => "Projet de fin de formation : Tribu (Repo GitHub)",
             'link' => "https://github.com/MarilyneDruart/projet_tribu-formation-back",
             'picture' => "php/public/img/img_realisations/tribu.png",
-            'alt' => "site_tribu",
-            'description' => "Tribu est LE réseau social qui a pour but de mettre en relation les français expatriés afin de partager des lieux d’intérêts, d’échanger des conseils et de se rencontrer dans une nouvelle ville pour faciliter l'intégration dans un pays étranger.",
+            'alt' => "repo_tribu",
+            'description' => "Repository de l'application côté Back (API et Back-office).",
         ],
-        6 => [
+        // 6 => [
+        //     'title' => "Projet de fin de formation : Tribu (Site web)",
+        //     'link' => "https://tribu.surge.sh/",
+        //     'picture' => "php/public/img/img_realisations/tribu-site.png",
+        //     'alt' => "site_tribu",
+        //     'description' => "Tribu est LE réseau social qui a pour but de mettre en relation les français expatriés afin de partager des lieux d’intérêts, d’échanger des conseils et de se rencontrer dans une nouvelle ville pour faciliter l'intégration dans un pays étranger.",
+        // ],
+        7 => [
             'title' => "Mon CV en ligne (Repo GitHub)",
             'link' => "https://github.com/MarilyneDruart/cv_marilyne_druart",
             'picture' => "php/public/img/img_realisations/cv.png",
             'alt' => "curriculum-vitae",
             'description' => "Lien vers le repository de ce site. CV en ligne créé en Mobile first.",
         ],
-        7 => [
-            'title' => "GDF loot council (Repo GitHub - WIP)",
-            'link' => "https://github.com/MarilyneDruart/gdf_loot",
-            'picture' => "php/public/img/img_realisations/logo-gdf.png",
-            'alt' => "logo_gdf",
-            'description' => "Application créée avec Symfony, qui permet aux membres d'une guilde de consulter leur avancée au sein de celle-ci grâce à un système de scores calculés en fonction de leurs présences notamment. Elle permet d’optimiser l’attribution des items sur les Raids 25 joueurs.",
+        // 8 => [
+        //     'title' => "Guild_loot (Site web - WIP)",
+        //     'link' => "https://www.demo.gdf-loot.fr/",
+        //     'picture' => "php/public/img/img_realisations/wotlk.png",
+        //     'alt' => "logo_gdf",
+        //     'description' => "Application créée avec Symfony, qui permet aux membres d'une guilde de consulter leur avancée au sein de celle-ci grâce à un système de scores calculés en fonction de leurs présences notamment. Elle permet d’optimiser l’attribution des items sur les Raids 25 joueurs.",
+        // ],
+        9 => [
+            'title' => "Rider Music",
+            'link' => "https://www.rider-music.com/",
+            'picture' => "php/public/img/img_realisations/rider.png",
+            'alt' => "logo_rider-music",
+            'description' => "Site web e-commerce conçu avec Prestashop. Concept store.",
+        ],
+        10 => [
+            'title' => "DLG Cinéfilm",
+            'link' => "https://www.dlgcinefilm.com/",
+            'picture' => "https://www.dlgcinefilm.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-05-at-20.58.39-1-300x209.jpeg",
+            'alt' => "logo_dlg",
+            'description' => "Site web de location de lieux / décors de tournage pour Cinéma, Télévision, Streaming, Pub, Clip, Shooting. Production audiovisuelle.",
         ],
 
                                 // 8 => [
